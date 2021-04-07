@@ -1,38 +1,76 @@
 <html>
-<head>
-	<title>Fit-Gym</title>
-	<link rel="stylesheet" href="form.css">
-</head>
-<body>
-	
-<form name="Registration">
-<h3>Registrtion</h3>
-<input name="FN" type="text" size="20" maxlength="30" placeholder="First Name"><br>
-<input name="LN" type="text" size="20" maxlength="30" placeholder="Last Name"><br>
-<input name="A" type="text" size="30" maxlength="100" placeholder="Address"><br>
-<input name="E" type="text" size="15" maxlength="20" placeholder="E-mail"><br>
-<input name="P" type="Number"  maxlength="20" placeholder="Contact Number"><br>
-<input name="H" type="Number" min="54" max="250" placeholder="Height(CM)"><br>
-<input name="K" type="Number" min="35" max="250" placeholder="Weight(KG)"><br>
-<input name="B" type="Number" min="7" max="50" placeholder="BMI"><br>
-Gender: <br> 
-<div class="container">
-<input type="radio" name="gender" id="Male">
-<label for="M">Male<br></label>
-<input type="radio" name="gender" id="Female">
-<label for="F">Female<br></label>
-<input type="radio" name="gender" id="Other">
-<label for="O">Other<br></label>
-</div>
-Gym Membership Plan:<br>
-<div class="membership"> 
-<input type="radio" name="brochure"/>Three Month-$25<br>
- <input type="radio" name="brochure"/>Six Month-$50<br>
- <input type="radio" name="brochure"/>One Year-$80<br>
-</div>
-<button type="submit" name="Submit">Register</button>
-
-
-</form>
-</body>
+  <head>
+    <title>Fit-Gym</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <form name="Registration">
+      <h3>Registrtion</h3>
+      <input
+        name="FN"
+        type="text"
+        size="20"
+        maxlength="30"
+        placeholder="First Name"
+      /><br />
+      <input
+        name="LN"
+        type="text"
+        size="20"
+        maxlength="30"
+        placeholder="Last Name"
+      /><br />
+      <input
+        name="A"
+        type="text"
+        size="30"
+        maxlength="100"
+        placeholder="Address"
+      /><br />
+      <input
+        name="E"
+        type="text"
+        size="15"
+        maxlength="20"
+        placeholder="E-mail"
+      /><br />
+      <input
+        name="P"
+        type="Number"
+        maxlength="20"
+        placeholder="Contact Number"
+      /><br />
+      <input
+        name="H"
+        type="Number"
+        min="54"
+        max="250"
+        placeholder="Height(CM)"
+      /><br />
+      <input
+        name="K"
+        type="Number"
+        min="35"
+        max="250"
+        placeholder="Weight(KG)"
+      /><br />
+      <input name="B" type="Number" min="7" max="50" placeholder="BMI" /><br />
+      Gender: <br />
+      <div class="container">
+        <input type="radio" name="gender" id="Male" />
+        <label for="M">Male<br /></label>
+        <input type="radio" name="gender" id="Female" />
+        <label for="F">Female<br /></label>
+        <input type="radio" name="gender" id="Other" />
+        <label for="O">Other<br /></label>
+      </div>
+      Gym Membership Plan:<br />
+      <div class="membership">
+        <input type="radio" name="brochure" />Three Month-$25<br />
+        <input type="radio" name="brochure" />Six Month-$50<br />
+        <input type="radio" name="brochure" />One Year-$80<br />
+      </div>
+      <button type="submit" name="Submit">Register</button>
+    </form>
+  </body>
 </html>
