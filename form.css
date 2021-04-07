@@ -1,34 +1,65 @@
-
+body{
+	height:100%;
+	width:100%;
+	background: url('formbg.jpg') center fixed;
+	background-size: cover;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
 form{
-	width:300px;
-	background: rgba(255,255,255,0.8);
-	padding: 30px;
+	width: 450px;
+	height: 95%;
+	background: rgba(255,255,255,0.6);
+	border:20px 20px;
+	padding: 10px 40px;
 	border-radius: 5px;
 	display: flex;
+	justify-content: center;
+	align-items:center;
+	align-content: center;
 	flex-direction:column;
 }
-body{
-background: url('formbg.jpg') no-repeat top center;
-background-size: cover;
-height: 100vh; 
-width: 100vw;
+h3{
+	padding: 5px 5px 20px 20px;
+}
+input{
+	width:100%;
+}
+input:hover{
+	cursor:text;
+	transform: scale(1.05);
+	outline-color: black;
+}
 
-}
-input{
-	width:100%
-}
-input{
-outline: none
-border: 1px #ddd
-}
 input:focus{
   box-shadow:0 0 4px rbga(255,0,0,0.5);
   border: 1px solid rbga(255,0,0);
 }
 
-.container{
-	display: flex;	
+p{
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-weight:550;
 }
-.membership{
-	display: flex;
+.button{
+	margin-top: 20px;
+	background-color:rgb(160, 160, 160);
+	padding: 6px 20px;
+	border-radius: 20em;
+	border-color:rgb(160, 160, 160);
+	font-weight: 600;
+}
+.button:hover{
+	background-color: rgba(0, 143, 19, 0.9);
+	transform: scale(1.1);
+	cursor: pointer;
+}
+.rad:hover{
+	cursor: pointer;
 }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fit Gym</title>
+        <link rel="stylesheet" type="text/css" href="form.css">
+        <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container">
+            <form method="POST">
+                <h3>Registration</h3>
+                <input name="FN" type="text" placeholder="First Name" required><br>
+                <input name="LN" type="text" placeholder="Last Name" required><br>
+                <input name="Address" type="text" placeholder="Address" required><br>
+                <input name="Email" type="email" placeholder="E-mail" required><br>
+                <input name="CNumber" type="number" placeholder="Contact Number" required><br>
+                <input name="Height" type="number" placeholder="Height(cm)" required><br>
+                <input name="Weight" type="number" placeholder="Weight(kg)" required><br>
+                <input name="BMI" type="number" placeholder="BMI" required><br>
+                <p>Gender:</p><br> 
+                <div class="container">
+                    <input type="radio" name="gender" id="Male" class="rad">
+                    <label for="M">Male<br></label>
+                    <input type="radio" name="gender" id="Female" class="rad">
+                    <label for="F">Female<br></label>
+                    <input type="radio" name="gender" id="Other" class="rad">
+                    <label for="O">Other<br></label>
+                </div>
+                <p>Gym Membership Plan:</p><br>
+                <div class="container"> 
+                    <input type="radio" name="brochure" class="rad"/>Three Months-$25<br>
+                    <input type="radio" name="brochure" class="rad"/>Six Months-$50<br>
+                    <input type="radio" name="brochure" class="rad"/>One Year-$80<br>
+                </div>
+                <button type="submit" name="Submit" class="button" onclick="alert('Form has been successfully submitted!')">Register</button>
+            </form>
+        </div>
+    </body>
+</html>
