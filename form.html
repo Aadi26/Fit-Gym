@@ -1,76 +1,182 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fit-Gym</title>
-    <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" href="csstemp.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="theme-color" content="#7952b3" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
   </head>
+
   <body>
-    <form name="Registration">
-      <h3>Registrtion</h3>
-      <input
-        name="FN"
-        type="text"
-        size="20"
-        maxlength="30"
-        placeholder="First Name"
-      /><br />
-      <input
-        name="LN"
-        type="text"
-        size="20"
-        maxlength="30"
-        placeholder="Last Name"
-      /><br />
-      <input
-        name="A"
-        type="text"
-        size="30"
-        maxlength="100"
-        placeholder="Address"
-      /><br />
-      <input
-        name="E"
-        type="text"
-        size="15"
-        maxlength="20"
-        placeholder="E-mail"
-      /><br />
-      <input
-        name="P"
-        type="Number"
-        maxlength="20"
-        placeholder="Contact Number"
-      /><br />
-      <input
-        name="H"
-        type="Number"
-        min="54"
-        max="250"
-        placeholder="Height(CM)"
-      /><br />
-      <input
-        name="K"
-        type="Number"
-        min="35"
-        max="250"
-        placeholder="Weight(KG)"
-      /><br />
-      <input name="B" type="Number" min="7" max="50" placeholder="BMI" /><br />
-      Gender: <br />
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid justify-content-around">
+          <a class="navbar-brand" href="index.html">Fit Gym</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#members">About us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <form action="#">
       <div class="container">
-        <input type="radio" name="gender" id="Male" />
-        <label for="M">Male<br /></label>
-        <input type="radio" name="gender" id="Female" />
-        <label for="F">Female<br /></label>
-        <input type="radio" name="gender" id="Other" />
-        <label for="O">Other<br /></label>
+        <h1>Registration form</h1>
+        <br />
+
+        <div class="initials">
+          <div class="name">
+            <input
+              type="text"
+              name="s_fname"
+              id="s_fname"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              name="s_lname"
+              id="s_lname"
+              placeholder="Last Name"
+              required
+            /><br />
+          </div>
+
+          <input
+            type="email"
+            name="s_email"
+            id="s_email"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="text"
+            name="s_address"
+            id="s_address"
+            placeholder="Enter home address"
+            required
+          />
+
+          <br />
+        </div>
+        <br />
+        <div class="contact">
+          Constact Number: <br />
+          <input
+            type="number"
+            name="code"
+            id="code"
+            placeholder="+91"
+            required
+          />
+          <input
+            type="number"
+            name="numb"
+            id="numb"
+            placeholder="0123456789"
+            required
+          /><br />
+          <div>
+            <br />
+            Height:
+            <input
+              type="number"
+              name="height"
+              id="height"
+              placeholder="in cm"
+              required
+            />
+            Weight:
+            <input
+              type="number"
+              name="weight"
+              id="weight"
+              placeholder="in kg"
+              required
+            />
+            BMI:
+            <input
+              type="number"
+              name="bmi"
+              id="bmi"
+              placeholder="BMI"
+              required
+            /><br />
+            <br />
+            Gender: <br />
+            <div class="gender">
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="male" value="male" />
+              <label for="female">Female</label>
+              <input type="radio" name="gender" id="female" value="female" />
+              <label for="others">Others</label>
+              <input type="radio" name="gender" id="others" value="others" />
+            </div>
+            <br />
+
+            Plan: <br />
+            <div class="plan">
+              <label for="male">Three Month-$25</label>
+              <input type="radio" name="plan" id="plan_1" value="male" />
+              <label for="female">Six Month-$50</label>
+              <input type="radio" name="plan" id="plan_2" value="female" />
+              <label for="others">One Year-$80</label>
+              <input type="radio" name="plan" id="plan_3" value="others" />
+            </div>
+            <br />
+            <div class="button">
+              <button type="submit" id="submit" name="submit">Register</button>
+            </div>
+          </div>
+        </div>
       </div>
-      Gym Membership Plan:<br />
-      <div class="membership">
-        <input type="radio" name="brochure" />Three Month-$25<br />
-        <input type="radio" name="brochure" />Six Month-$50<br />
-        <input type="radio" name="brochure" />One Year-$80<br />
-      </div>
-      <button type="submit" name="Submit">Register</button>
     </form>
   </body>
 </html>
